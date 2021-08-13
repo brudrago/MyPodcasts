@@ -1,5 +1,5 @@
 //
-//  SearchViewController.swift
+//  SearchPodcastsViewController.swift
 //  MyPodcasts
 //
 //  Created by Bruna Drago on 13/08/21.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-class SearchViewController: UIViewController {
+class SearchPodcastsViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
