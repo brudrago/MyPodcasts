@@ -9,12 +9,6 @@ import UIKit
 
 class SearchPodcastsViewController: UIViewController {
     
-//    let podcasts = [
-//        Podcast(name: "Lets Build That App", author: "Brian"),
-//        Podcast(name: "Build Failed", author: "Bruno Rocha"),
-//        Podcast(name: "6 Minute English", author: "BBC")
-//    ]
-    
     private lazy var podcastView: SearchPodcastsView = {
         return SearchPodcastsView()
     }()
@@ -32,6 +26,8 @@ class SearchPodcastsViewController: UIViewController {
 
     }
     
+    // MARK: - Private Functions
+    
     private func setupSearchBar() {
         let search = UISearchController(searchResultsController: nil)
       //  search.searchResultsUpdater = self
@@ -44,6 +40,8 @@ class SearchPodcastsViewController: UIViewController {
     }
 
 }
+
+// MARK: - UISearchBarDelegate Extension
 
 extension SearchPodcastsViewController: UISearchBarDelegate {
     
