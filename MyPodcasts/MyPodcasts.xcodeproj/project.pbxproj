@@ -18,6 +18,11 @@
 		7051E15226C7358E00B9B6F9 /* SearchPodcastsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7051E15126C7358E00B9B6F9 /* SearchPodcastsView.swift */; };
 		7051E15626C735BF00B9B6F9 /* ViewCodeProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7051E15526C735BF00B9B6F9 /* ViewCodeProtocol.swift */; };
 		7051E15A26C738DB00B9B6F9 /* UITableViewCell+ Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7051E15926C738DB00B9B6F9 /* UITableViewCell+ Ext.swift */; };
+		70CB08F126CB0FF9009B9EA8 /* PodcastCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70CB08F026CB0FF9009B9EA8 /* PodcastCell.swift */; };
+		70CB08F426CB137E009B9EA8 /* Podcast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70CB08F326CB137E009B9EA8 /* Podcast.swift */; };
+		70CB08F626CB18F6009B9EA8 /* pod2.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 70CB08F526CB18F6009B9EA8 /* pod2.jpeg */; };
+		70CB08F826CB18FE009B9EA8 /* pod3.png in Resources */ = {isa = PBXBuildFile; fileRef = 70CB08F726CB18FE009B9EA8 /* pod3.png */; };
+		70CB08FA26CB191C009B9EA8 /* pod1.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 70CB08F926CB191C009B9EA8 /* pod1.jpeg */; };
 		B7A8940F4A87C1FCB1CB45FE /* Pods_MyPodcasts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B65742058F0D794D8CDC682D /* Pods_MyPodcasts.framework */; };
 /* End PBXBuildFile section */
 
@@ -37,6 +42,11 @@
 		7051E15126C7358E00B9B6F9 /* SearchPodcastsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchPodcastsView.swift; sourceTree = "<group>"; };
 		7051E15526C735BF00B9B6F9 /* ViewCodeProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewCodeProtocol.swift; sourceTree = "<group>"; };
 		7051E15926C738DB00B9B6F9 /* UITableViewCell+ Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableViewCell+ Ext.swift"; sourceTree = "<group>"; };
+		70CB08F026CB0FF9009B9EA8 /* PodcastCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PodcastCell.swift; sourceTree = "<group>"; };
+		70CB08F326CB137E009B9EA8 /* Podcast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Podcast.swift; sourceTree = "<group>"; };
+		70CB08F526CB18F6009B9EA8 /* pod2.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = pod2.jpeg; sourceTree = "<group>"; };
+		70CB08F726CB18FE009B9EA8 /* pod3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pod3.png; sourceTree = "<group>"; };
+		70CB08F926CB191C009B9EA8 /* pod1.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = pod1.jpeg; sourceTree = "<group>"; };
 		B65742058F0D794D8CDC682D /* Pods_MyPodcasts.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyPodcasts.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -90,6 +100,7 @@
 		7051E12F26C7201C00B9B6F9 /* MyPodcasts */ = {
 			isa = PBXGroup;
 			children = (
+				70CB08F226CB1369009B9EA8 /* Models */,
 				7051E15326C735A000B9B6F9 /* Shared */,
 				7051E14F26C7346C00B9B6F9 /* Features */,
 				7051E14C26C72C5500B9B6F9 /* Support */,
@@ -105,6 +116,9 @@
 				7051E13226C7201C00B9B6F9 /* SceneDelegate.swift */,
 				7051E13026C7201C00B9B6F9 /* AppDelegate.swift */,
 				7051E14A26C72C4200B9B6F9 /* Assets.xcassets */,
+				70CB08F926CB191C009B9EA8 /* pod1.jpeg */,
+				70CB08F726CB18FE009B9EA8 /* pod3.png */,
+				70CB08F526CB18F6009B9EA8 /* pod2.jpeg */,
 			);
 			path = Support;
 			sourceTree = "<group>";
@@ -149,6 +163,7 @@
 		7051E15726C7363900B9B6F9 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				70CB08EF26CB0FDC009B9EA8 /* Cell */,
 				7051E15126C7358E00B9B6F9 /* SearchPodcastsView.swift */,
 			);
 			path = View;
@@ -160,6 +175,22 @@
 				7051E15926C738DB00B9B6F9 /* UITableViewCell+ Ext.swift */,
 			);
 			path = Extension;
+			sourceTree = "<group>";
+		};
+		70CB08EF26CB0FDC009B9EA8 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				70CB08F026CB0FF9009B9EA8 /* PodcastCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		70CB08F226CB1369009B9EA8 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				70CB08F326CB137E009B9EA8 /* Podcast.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -222,7 +253,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				7051E14B26C72C4200B9B6F9 /* Assets.xcassets in Resources */,
+				70CB08F826CB18FE009B9EA8 /* pod3.png in Resources */,
 				7051E13D26C7201D00B9B6F9 /* LaunchScreen.storyboard in Resources */,
+				70CB08FA26CB191C009B9EA8 /* pod1.jpeg in Resources */,
+				70CB08F626CB18F6009B9EA8 /* pod2.jpeg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -277,10 +311,12 @@
 			files = (
 				7051E14E26C72F7C00B9B6F9 /* SearchPodcastsViewController.swift in Sources */,
 				7051E15626C735BF00B9B6F9 /* ViewCodeProtocol.swift in Sources */,
+				70CB08F126CB0FF9009B9EA8 /* PodcastCell.swift in Sources */,
 				7051E13126C7201C00B9B6F9 /* AppDelegate.swift in Sources */,
 				7051E13326C7201C00B9B6F9 /* SceneDelegate.swift in Sources */,
 				7051E15A26C738DB00B9B6F9 /* UITableViewCell+ Ext.swift in Sources */,
 				7051E14726C72A3500B9B6F9 /* FavoritesViewController.swift in Sources */,
+				70CB08F426CB137E009B9EA8 /* Podcast.swift in Sources */,
 				7051E14926C72A4200B9B6F9 /* DownloadViewController.swift in Sources */,
 				7051E14526C7261E00B9B6F9 /* MainTabBarController.swift in Sources */,
 				7051E15226C7358E00B9B6F9 /* SearchPodcastsView.swift in Sources */,
