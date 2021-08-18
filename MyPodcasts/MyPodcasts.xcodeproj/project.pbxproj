@@ -23,6 +23,9 @@
 		70CB08F626CB18F6009B9EA8 /* pod2.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 70CB08F526CB18F6009B9EA8 /* pod2.jpeg */; };
 		70CB08F826CB18FE009B9EA8 /* pod3.png in Resources */ = {isa = PBXBuildFile; fileRef = 70CB08F726CB18FE009B9EA8 /* pod3.png */; };
 		70CB08FA26CB191C009B9EA8 /* pod1.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 70CB08F926CB191C009B9EA8 /* pod1.jpeg */; };
+		70CB08FD26CB3008009B9EA8 /* PodcastsResults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70CB08FC26CB3008009B9EA8 /* PodcastsResults.swift */; };
+		70CB08FF26CB348E009B9EA8 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70CB08FE26CB348E009B9EA8 /* NetworkManager.swift */; };
+		70CB090126CB3650009B9EA8 /* PodcastWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70CB090026CB3650009B9EA8 /* PodcastWorker.swift */; };
 		B7A8940F4A87C1FCB1CB45FE /* Pods_MyPodcasts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B65742058F0D794D8CDC682D /* Pods_MyPodcasts.framework */; };
 /* End PBXBuildFile section */
 
@@ -47,6 +50,9 @@
 		70CB08F526CB18F6009B9EA8 /* pod2.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = pod2.jpeg; sourceTree = "<group>"; };
 		70CB08F726CB18FE009B9EA8 /* pod3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pod3.png; sourceTree = "<group>"; };
 		70CB08F926CB191C009B9EA8 /* pod1.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = pod1.jpeg; sourceTree = "<group>"; };
+		70CB08FC26CB3008009B9EA8 /* PodcastsResults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PodcastsResults.swift; sourceTree = "<group>"; };
+		70CB08FE26CB348E009B9EA8 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		70CB090026CB3650009B9EA8 /* PodcastWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PodcastWorker.swift; sourceTree = "<group>"; };
 		B65742058F0D794D8CDC682D /* Pods_MyPodcasts.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyPodcasts.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -100,6 +106,8 @@
 		7051E12F26C7201C00B9B6F9 /* MyPodcasts */ = {
 			isa = PBXGroup;
 			children = (
+				70FF3D5026CDD45E008F55BE /* Workers */,
+				70CB08FB26CB2A6E009B9EA8 /* Networking */,
 				70CB08F226CB1369009B9EA8 /* Models */,
 				7051E15326C735A000B9B6F9 /* Shared */,
 				7051E14F26C7346C00B9B6F9 /* Features */,
@@ -189,8 +197,25 @@
 			isa = PBXGroup;
 			children = (
 				70CB08F326CB137E009B9EA8 /* Podcast.swift */,
+				70CB08FC26CB3008009B9EA8 /* PodcastsResults.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		70CB08FB26CB2A6E009B9EA8 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				70CB08FE26CB348E009B9EA8 /* NetworkManager.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		70FF3D5026CDD45E008F55BE /* Workers */ = {
+			isa = PBXGroup;
+			children = (
+				70CB090026CB3650009B9EA8 /* PodcastWorker.swift */,
+			);
+			path = Workers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -312,14 +337,17 @@
 				7051E14E26C72F7C00B9B6F9 /* SearchPodcastsViewController.swift in Sources */,
 				7051E15626C735BF00B9B6F9 /* ViewCodeProtocol.swift in Sources */,
 				70CB08F126CB0FF9009B9EA8 /* PodcastCell.swift in Sources */,
+				70CB08FF26CB348E009B9EA8 /* NetworkManager.swift in Sources */,
 				7051E13126C7201C00B9B6F9 /* AppDelegate.swift in Sources */,
 				7051E13326C7201C00B9B6F9 /* SceneDelegate.swift in Sources */,
 				7051E15A26C738DB00B9B6F9 /* UITableViewCell+ Ext.swift in Sources */,
 				7051E14726C72A3500B9B6F9 /* FavoritesViewController.swift in Sources */,
+				70CB090126CB3650009B9EA8 /* PodcastWorker.swift in Sources */,
 				70CB08F426CB137E009B9EA8 /* Podcast.swift in Sources */,
 				7051E14926C72A4200B9B6F9 /* DownloadViewController.swift in Sources */,
 				7051E14526C7261E00B9B6F9 /* MainTabBarController.swift in Sources */,
 				7051E15226C7358E00B9B6F9 /* SearchPodcastsView.swift in Sources */,
+				70CB08FD26CB3008009B9EA8 /* PodcastsResults.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

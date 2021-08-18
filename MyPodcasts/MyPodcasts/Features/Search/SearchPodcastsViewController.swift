@@ -23,7 +23,18 @@ class SearchPodcastsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupSearchBar()
-
+       // fechtPodcasts(name: "modusoperandi")
+    }
+    
+    func fechtPodcasts(name: String) {
+        PodcastWorker.shared.fetchPodcastData(for: name) { results in
+            switch results {
+            case .success(let podcastsResult):
+                print("====PodcastsResults:\(String(describing: podcastsResult))")
+            case .failure(let error):
+            print("===ERROR:\(error)")
+            }
+        }
     }
     
     // MARK: - Private Functions
@@ -47,6 +58,7 @@ extension SearchPodcastsViewController: UISearchBarDelegate {
     
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
         print(searchText)
-        //implementar alamofire para procurar itunes API
+        fechtPodcasts(name: searchText)
+        //implementar alamofire para procurar itunes API// esta fazendo a pesquisa a cada letra
     }
 }
